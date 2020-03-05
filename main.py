@@ -7,8 +7,8 @@ from utils.darknet import Darknet
 
 
 def get_net(net_name):
-    if net_name == 'yolov3-face':
-        return Darknet('./src/yolov3-face.cfg', '/Users/lele/pro-lib/weight/第一次训练权重/yolov3_ckpt_0.pth')
+    if net_name == 'yolov3':
+        return Darknet('./src/yolov3.cfg', './src/yolov3.weights')
     elif net_name == 'yolov3-spp':
         return Darknet('./src/yolov3-spp.cfg', './src/yolov3-spp.weights')
     elif net_name == 'yolov3-tiny':
